@@ -25,6 +25,7 @@ header img {
   align-items: center;
   padding: 0;
   margin-right: 98px;
+  animation:  downtop 2000ms ; 
 }
 
 h1,
@@ -75,6 +76,7 @@ div .products {
 
   grid-column-gap: 20px;
   border-spacing: 0;
+  animation:  topdown 2000ms ; 
 }
 div .products > div {
   text-align: center;
@@ -92,4 +94,29 @@ footer {
 }
 div .image {
   height: max-content;
+}
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+
+  }
+   100% {
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+
+  }
+   100% {
+    opacity: 1;
+    transform: translateY(0);
+
+  }
 }
